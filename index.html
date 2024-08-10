@@ -3,209 +3,270 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Gaukhar Nur</title>
-
-	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1" />
-
-	<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&display=swap" rel="stylesheet">
-
-	<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap" rel="stylesheet">
-	
-	<link rel="stylesheet" type="text/css" href="default.css">
-
-	<link id="theme-style" rel="stylesheet" type="text/css" href="">
+	<title>My Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="mediaqueries.css">
 </head>
-<body>
-
-	<section class="s1">
-		<div class="main-container">
-			<div class="greeting-wrapper">
-			<h1>Hi, I'm Gaukhar Nurbek</h1>
+	<body>
+		<nav id="desktop-nav">
+			<div class="logo">Gaukhar Nurbek</div>
+			<div>
+				<ul class="nav-links">
+					<li><a href="#about">About</a></li>
+					<li><a href="#experience">Experience</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
 			</div>
-
-			<div class="intro-wrapper">
-				<div class="nav-wrapper">
-					<div class="dots-wrapper"> 
-						<div id="dot-1" class="browser-dot"></div>
-						<div id="dot-2" class="browser-dot"></div>
-						<div id="dot-3" class="browser-dot"></div>
-					</div>
-
-					<ul id="navigation"> 
-						<li><a href=mailto:“gaukharanurbek@gmail.com”>Contact me</a></li>
-					</ul>
-					
+		</nav>
+		<nav id="hamburger-nav">
+			<div class="logo">Gaukhar Nurbek</div>
+			<div class="hamburger-menu">
+				<div class="hamburger-icon" onclick="toggleMenu()">
+					<span></span>
+					<span></span>
+					<span></span>
 				</div>
-
-				<div class="left-column">
-					<img id="profile-pic" src="images/Goha-upd.jpeg">
-					<h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
-
-					<div id="theme-options-wrapper">
-						<div data-mode='light' id="light-mode" class="theme-dot"></div>
-						<div data-mode='blue' id="blue-mode" class="theme-dot"></div>
-						<div data-mode='orange' id="orange-mode" class="theme-dot"></div>
-						<div data-mode='pink' id="pink-mode" class="theme-dot"></div>
-					</div>
-
-					<p id="settings-note">*Theme settings will be saved for <br>your next visit</p>
-
+				<div class="menu-links">
+					<li><a href="#about" onclick="toggleMenu()">About</a></li>
+					<li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+					<li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+					<li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
 				</div>
-
-				<div class="right-column">
-					<div id="preview-shadow">
-						<div id="preview">
-							<div id="corner-tl" class="corner"></div>
-							<div id="corner-tr" class="corner"></div>
-							<h3>What I'm up to</h3>
-							<p>I am CS graduate student with experience <br>in Data Science/Data Analysis.</p>
-							<div id="corner-br" class="corner"></div>
-							<div id="corner-bl" class="corner"></div>
-						</div>
-					</div>
-				</div>
-				
 			</div>
-		</div>
-	</section>
-
-	<section class="s2">
-		<div class="main-container">
-			<div class="about-wrapper">
-				<div class="about-me">
-					<h4>More about me</h4>
-
-					<p>Aspiring ML engineer in Graph Representation Learning.</p>
-
-					<!-- <p>Currently self-studying: GNNs, Graph Neo4j, Tensorflow/PyTorch.</p> -->
-				
-
-					<hr>
-
-					<h4>Expertise</h4>
-
-					<p>Conducting research, data analysis, data science, and software development.<br><a target="_blank" href="CV-upd.pdf">Download CV</a></p>
-
-					<div id="skills">
-						<ul>
-							<li>Python(Pandas, NumPy,<br> 
-								Matplotlib, Seaborn,<br> 
-							Selenium, Beautiful soup)</li>
-							<li>Matlab</li>
-							<li>C#</li>
-							
-						</ul>
-						<ul>
-							<li>MS SQL</li>
-							<li>Bash</li>
-							<li>.NET MVC</li>
-							<li>Entity</li> 
-							<li>Git</li>
-
-						</ul>
-						<ul>		
-							<li>Docker</li>
-							<li>Visual Studio</li>
-							<li>X-Code</li>
-							<li>GraphQL</li>
-							<li>REST API</li>
-						</ul>
-					</div>
-
+		</nav>
+		<section id="profile">
+			<div class="section__pic-container">
+				<img src="./assets/profile-pic-G.jpeg" alt="profile pic">
+			</div>
+			<div class="section__text">
+				<p class="section__text__p1">Hello, I'm</p>
+				<h1 class="title">Gaukhar Nurbek</h1>
+				<p class="section__text__p2">Aspiring AI/ML Researcher</p>
+				<div class="btn-container">
+					<button class="btn btn-color-2" onclick="window.open('./assets/gaukhar_nurbek_resume.pdf')">
+						Download CV
+					</button>
+					<button class="btn btn-color-1" onclick="location.href='#contact'">
+						Contact Info
+					</button>
 				</div>
-
-				<div class="social-links">
-					<img id="social-img" src="images/social-img-upd.png">
-					<h3>Find me on LinkedIn</h3>
-					<a target="_blank" href="https://www.linkedin.com/in/gaukhar-nurbek/">LinkedIn: Gaukhar Nurbek</a>
-				
-				</div>	
-				
-			</div>	
-		</div>
-	</section>
-
-	<section class="s1">
-		<div class="main-container">
-			<h3 style="text-align: center;">My projects</h3>
-			<div class="post-wrapper">
-				
-				<div>
-					<div class="post">
-						<img class="thumbnail" src="images/ES_Chatbot.png">
-						<div class="post-preview">
-							<h6 class="post-title">Expert System</h6>
-							<p class="post-intro">Implemented a pipeline to vectorize and embed user-specific data into the chatbot's responses in 2 languages (Russian and Kazakh) using python, langchain, chroma .</p>
-							<a href="https://github.com/vbncml/expert_system_chatbot">Github Repo</a>
+				<div id="socials-container">
+					<img src="./assets/linkedin.png" alt="my linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/gaukhar-nurbek/'">
+					<img src="./assets/github.png" alt="my github profile" class="icon" onclick="location.href='https://github.com/vbncml'">
+				</div>
+			</div>
+		</section>
+		<section id="about">
+			<p class="section__text__p1">Get To Know More</p>
+			<h1 class="title">About me</h1>
+			<div class="section-container">
+				<div class="section__pic-container">
+					<img 
+						src="./assets/about-me.jpg" 
+						alt="profile pic" 
+						class="about-pic"
+					\>
+				</div>
+				<div class="about-details-container">
+					<div class="about-containers">
+						<div class="details-container">
+							<img 
+								src="./assets/experience.png" 
+								alt="experience icon" 
+								class='icon'
+							\>
+							<h3>Experience</h3>
+							<p>Conducting Research <br /> Machine Learning <br /> Data Analysis <br /> Data Science <br /> Software Development</p>
+						</div>
+						<div class="details-container">
+							<img 
+								src="./assets/education.png" 
+								alt="education icon" 
+								class='icon'
+							\>
+							<h3>Education</h3>
+							<p>B.Eng. Information Systems <br /> M.S. Interdisciplinary Studies in Science and Tech <br /> M.S. Computer Science </p>
+						</div>
+					</div>
+					<div class="text-container">
+						<p>
+							I’m Gaukhar Nurbek, an aspiring AI/ML researcher beginning my PhD journey. My work focuses on developing AI-driven data pipelines to detect gravitational waves from supernovae—an exciting blend of astrophysics and machine learning. I’m passionate about pushing the boundaries of AI, with interests in deep learning, signal processing, and graph neural networks. Outside of research, I enjoy jogging, playing tennis, and meditating. I’m always eager to collaborate with others in the tech community to drive innovation.
+						</p>
+					</div>
+				</div>
+			</div>
+			<img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='#experience'">
+		</section>
+		<section id="experience">
+			<p class="section__text__p1">Explore My</p>
+			<h1 class="title">Experience</h1>
+			<div class="experience-details-container">
+				<div class="about-containers">
+					<div class="details-container">
+						<h2 class="experience-sub-title">Software Development</h2>
+						<div class="article-container">
+							<article>
+								<img src="./assets/checkmark.png" alt="experience icon" class="icon">
+								<div>
+									<h3>Python</h3>
+									<p>Experienced</p>
+								</div>
+							</article>
+							<article>
+								<img src="./assets/checkmark.png" alt="experience icon" class="icon">
+								<div>
+									<h3>Go</h3>
+									<p>Intermediate</p>
+								</div>
+							</article>
+							<article>
+								<img src="./assets/checkmark.png" alt="experience icon" class="icon">
+								<div>
+									<h3>C#</h3>
+									<p>Intermediate</p>
+								</div>
+							</article>
+							<article>
+								<img src="./assets/checkmark.png" alt="experience icon" class="icon">
+								<div>
+									<h3>HTML/CSS/JS</h3>
+									<p>Intermediate</p>
+								</div>
+							</article>
+							<article>
+								<img src="./assets/checkmark.png" alt="experience icon" class="icon">
+								<div>
+									<h3>TypeScript</h3>
+									<p>Basic</p>
+								</div>
+							</article>
+							<article>
+								<img src="./assets/checkmark.png" alt="experience icon" class="icon">
+								<div>
+									<h3>Git</h3>
+									<p>Intermediate</p>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="details-container">
+						<h2 class="experience-sub-title">Machine Learning/Data Science</h2>
+						<div class="article-container">
+							<article>
+								<img src="./assets/checkmark.png" alt="experience icon" class="icon">
+								<div>
+									<h3>Pandas</h3>
+									<p>Experienced</p>
+								</div>
+							</article>
+							<article>
+								<img src="./assets/checkmark.png" alt="experience icon" class="icon">
+								<div>
+									<h3>Pytorch</h3>
+									<p>Intermediate</p>
+								</div>
+							</article>
+							<article>
+								<img src="./assets/checkmark.png" alt="experience icon" class="icon">
+								<div>
+									<h3>PyG</h3>
+									<p>Intermediate</p>
+								</div>
+							</article>
+							<article>
+								<img src="./assets/checkmark.png" alt="experience icon" class="icon">
+								<div>
+									<h3>Langchain</h3>
+									<p>Intermediate</p>
+								</div>
+							</article>
+							<article>
+								<img src="./assets/checkmark.png" alt="experience icon" class="icon">
+								<div>
+									<h3>Tensorflow</h3>
+									<p>Intermediate</p>
+								</div>
+							</article>
+							<article>
+								<img src="./assets/checkmark.png" alt="experience icon" class="icon">
+								<div>
+									<h3>CUDA</h3>
+									<p>Basic</p>
+								</div>
+							</article>
 						</div>
 					</div>
 				</div>
-				
-				<div>
-					<div class="post">
-						<img class="thumbnail" src="images/RL_GNN.png">
-						<div class="post-preview">
-							<h6 class="post-title">Reinforcement Learning using GNN</h6>
-							<p class="post-intro">Developed an experimentation software for testing reinforcement learning algorithms employing Graph Neural Networks as policies for locomotion of 3-D models. Using python, PyTorch, PyTorch Geometric, PyTorch Geometric Temporal, MuJoCo, Tensorboard.</p>
-							<a href="https://github.com/vbncml/rl_gnn">Github Repo</a>
-						</div>
+			</div>
+			<img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='#projects'">
+		</section>
+		<section id="projects">
+			<p class="section__text__p1">Browse My Recent</p>
+			<h1 class="title">Projects</h1>
+			<div class="experience-details-container">
+				<div class="about-containers">
+				<div class="details-container color-container">
+					<div class="article-container">
+						<img src="./assets/project-1-g.png" alt="Project 1" class="project-img">
+					</div>
+					<h2 class="experience-sub-title project-title">ML Interview Tutor</h2>
+					<div class="btn-container">
+						<button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/vbncml/ml-interview-tutor'">Github</button>
+						<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
 					</div>
 				</div>
-				
-				<!-- <div>
-					<div class="post">
-						<img class="thumbnail" src="images/CNN.png">
-						<div class="post-preview">
-							<h6 class="post-title">Image classification</h6>
-							<p class="post-intro">Image classification model for Supernovae gravitational waveforms and Background noises using Convolutional Neural Networks.</p>
-							<a href="#">Read more</a>
-						</div>
+				<div class="details-container color-container">
+					<div class="article-container">
+						<img src="./assets/project-2-g.png" alt="Project 2" class="project-img">
 					</div>
-				</div> -->
-				
-			
-			</div>	
-		</div>
-	</section>
-
-	<!-- <section class="s2">
-		<div class="main-container">
-			<h3 style="text-align: center;">Get in touch</h3>
-			<form id="contact-form">
-				<label>Name</label>
-				<input class="input-field" type="text" name="name">
-
-				<label>Subject</label>
-				<input class="input-field" type="text" name="subject">
-
-				<label>Email</label>
-				<input class="input-field" type="text" name="email">
-
-				<label>Message</label>
-				<textarea class="input-field" name="message"></textarea>
-				
-				<input id="submit-btn" type="submit" value="Send">
-
-			</form>	
-		</div>
-	</section> -->
-
-	<script type="text/javascript" src="script.js"></script>
-
-</body>
+					<h2 class="experience-sub-title project-title">Exploring GNNs in RL</h2>
+					<div class="btn-container">
+						<button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/vbncml/rl_gnn'">Github</button>
+						<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
+					</div>
+				</div>
+				<div class="details-container color-container">
+					<div class="article-container">
+						<img src="./assets/project-3-g.png" alt="Project 3" class="project-img">
+					</div>
+					<h2 class="experience-sub-title project-title">Expert's System Chatbot</h2>
+					<div class="btn-container">
+						<button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/vbncml/expert_system_chatbot'">Github</button>
+						<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
+					</div>
+				</div>
+				</div>
+			</div>
+			<img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='#contact'">
+		</section>
+		<section id="contact">
+			<p class="section__text__p1">Get In Touch</p>
+			<h1 class="title">Contact Me</h1>
+			<div class="contact-info-upper-container">
+				<div class="contact-info-container">
+					<img src="./assets/email.png" alt="email icon" class="icon contact-item email-icon">
+					<p><a href="mailto:gaukharanurbek@gmail.com">gaukharanurbek@gmail.com</p>
+				</div>
+				<div class="contact-info-container">
+					<img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-item">
+					<p><a href="https://www.linkedin.com/in/gaukhar-nurbek/">LinkedIn</p>
+				</div>
+			</div>
+		</section>
+	    <footer>
+      		<nav>
+		        <div class="nav-links-container">
+		          <ul class="nav-links">
+		            <li><a href="#about">About</a></li>
+		            <li><a href="#experience">Experience</a></li>
+		            <li><a href="#projects">Projects</a></li>
+		            <li><a href="#contact">Contact</a></li>
+		          </ul>
+		        </div>
+	      </nav>
+      <p>Copyright &#169; 2024 Gaukhar Nurbek</p>
+    </footer>
+	<script src="script.js"></script>
+	</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

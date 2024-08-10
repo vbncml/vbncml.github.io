@@ -1,36 +1,6 @@
-console.log('working')
-
-let theme= localStorage.getItem('theme')
-
-if(theme == null){
-	setTheme('light')
-}else{
-	setTheme(theme)
-}
-
-let themeDots = document.getElementsByClassName('theme-dot')
-
-for (var i=0; themeDots.length > i; i++){
-	themeDots[i].addEventListener('click',function(){
-		let mode = this.dataset.mode
-		console.log('Option clicked:', mode)
-		setTheme(mode)
-	})
-}
-
-function setTheme(mode){
-	if (mode== 'light'){
-		document.getElementById('theme-style').href = 'default.css'
-	}
-	if (mode== 'blue'){
-		document.getElementById('theme-style').href = 'blue.css'
-	}
-	if (mode== 'orange'){
-		document.getElementById('theme-style').href = 'orange.css'
-	}
-	if (mode== 'pink'){
-		document.getElementById('theme-style').href = 'pink.css'
-	}
-	localStorage.setItem('theme', mode)
-
+function toggleMenu() {
+	const menu = document.querySelector(".menu-links");
+	const icon = document.querySelector(".hamburger-icon");
+	menu.classList.toggle("open");
+	icon.classList.toggle("open");
 }
